@@ -4,7 +4,7 @@ public class 在排序数组中查找元素的第一个和最后一个位置 {
 
     public static void main(String[] args){
         在排序数组中查找元素的第一个和最后一个位置 s = new 在排序数组中查找元素的第一个和最后一个位置();
-        System.out.println(Arrays.toString(s.searchRange(new int[]{5,7,7,8,8,10},8)));
+        System.out.println(Arrays.toString(s.searchRange(new int[]{1},1)));
     }
     public int[] searchRange(int[] nums, int target) {
         int[] result = new int[]{-1,-1};

@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -10,7 +9,7 @@ public class 合并区间 {
     }
     public static int[][] merge(int[][] intervals) {
         if(intervals.length <= 1) return intervals;
-        Arrays.sort(intervals, Comparator.comparingInt(v -> v[0]));
+        Arrays.sort(intervals, (v1, v2) -> v1[0] - v2[0]);
         ArrayList<int[]> result = new ArrayList<>();
         for(int i = 1; i < intervals.length; i++){
             if(intervals[i][0] <= intervals[i-1][1]){

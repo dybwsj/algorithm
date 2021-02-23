@@ -8,9 +8,6 @@ public class N皇后 {
     public List<List<String>> solveNQueens(int n) {
         if(n <= 0) return list;
         char[][] qipan = new char[n][n];
-        int[] rods = new int[]{1,2};
-        int i  =1;
-        int[] a = rods;
         for (char[] chars : qipan) Arrays.fill(chars, '.');
         find(qipan, 0);
         return list;
